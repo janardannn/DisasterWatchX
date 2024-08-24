@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-import puppeteer, { Browser, ElementHandle, Page } from "puppeteer";
+import puppeteer, { Page } from "puppeteer";
 
 const autoScroll = async (page: Page, prev: number): Promise<number> => {
     await new Promise((resolve) => setTimeout(resolve, 1550));
